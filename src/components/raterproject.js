@@ -3,6 +3,7 @@ import { Route, Redirect } from "react-router-dom"
 import { ApplicationViews } from "./ApplicationViews"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
+import { NavBar } from "./Navbar/NavBar"
 
 export const Raterproject = () => (
     <>
@@ -10,6 +11,7 @@ export const Raterproject = () => (
             if (localStorage.getItem("lu_token")) {
                 return <>
                     <Route>
+                        <NavBar/>
                         <ApplicationViews />
                     </Route>
                 </>
