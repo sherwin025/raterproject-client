@@ -49,6 +49,7 @@ export const GameDetail = () => {
         <button onClick={() => { history.push("./newgame") }}>Create new Game </button>
         {
             <div >
+                <div>Average Player Ratings: {game.average_rating}</div>
                 <div>{game.title}</div>
                 <div>{game.designer}</div>
                 <div>{game.year_released}</div>
